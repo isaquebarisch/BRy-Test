@@ -1,0 +1,13 @@
+# Configuração do Banco de Dados PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nome_do_banco
+    username: seu_usuario
+    password: sua_senha
+    driver-class-name: org.postgresql.Driver
+
+  # Configuração do Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
